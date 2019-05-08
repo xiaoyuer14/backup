@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ZAMPLUS</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script type="text/javascript">
+			(function(){
+				var i = [
+					'assets/bg.jpg',
+					'assets/bg-card.png',
+					'assets/bg-title.png'
+				],
+				imgs = [];
+				i.forEach(function(path, index){
+					imgs[index] = new Image();
+					imgs[index].src = i[index];
+
+				});
+			}());
+		</script>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="main">
+			<div class="title"></div>
+			<div id="wrapper">
+				<!-- <div class="photo-box"><p>奥术大师大所爱仕达撒所所多多所多</p><span>这是背面</span></div> -->
+			</div>
+		</div>
+		<div id="mask" class="none"></div>
+		<div id="modal" style="display: none">
+			<div class="image-wrap">
+				<img src="" alt="">
+				<div class="desc" style="display: none;"></div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/data.js"></script>
+		<script src="js/init.js"></script>
+	</body>
+</html>

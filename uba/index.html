@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>uba</title>
+</head>
+<body class="">
+    <div id="root">
+    	
+    	<button>test</button>
+    </div>
+    <div><a href="#/1123">1123</a></div>
+    <div><a href="#/1123/123">1123/123</a></div>
+    <div><a href="#/1123/345">1123/345</a></div>
+    <div><a href="#/1122/1122">1122/1122</a></div>
+    <div><a href="#/1123/gg">1123/gg</a></div>
+    <div><a href="#/1123/aa">1123/aa</a></div>
+
+<script>
+  try{(function(d, w, s, id){
+ //  	w.zamUbaInit = function() {
+	// 	UBA.init({
+	// 	  platform: "your-platform-id"
+	// 	});
+	// };
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) {
+		return;
+	}
+	js = d.createElement(s); 
+	js.id = id;
+	js.src = [location.protocol,"//","localhost/uba/uba.js"].join("");
+	js.src = "text.js";
+	js.async = true;
+	fjs.parentNode.insertBefore(js, fjs);
+   }(document, window, 'script', 'zam-uba-sdk'))}catch(e){};
+</script>
+</body>
+</html>
